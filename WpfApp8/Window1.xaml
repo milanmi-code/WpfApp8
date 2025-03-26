@@ -1,0 +1,106 @@
+﻿<Window x:Class="WpfApp8.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp8"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel
+            Margin="20"
+            Grid.Column="1"
+            Background="AliceBlue"
+            Name="NameStackPanel"
+            >
+        </StackPanel>
+        <StackPanel
+            Grid.Column="2"
+                        Margin="20"
+
+            Background="AliceBlue"
+            Name="AgeStackPanel"
+            >
+
+
+
+        </StackPanel>
+
+        <TextBlock
+            Grid.Column="1"
+                Text="Name"
+                FontSize="20"
+                HorizontalAlignment="Center"/>
+        <TextBlock
+            Grid.Column="2"
+                Text="Age"
+                FontSize="20"
+                HorizontalAlignment="Center"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Background="DodgerBlue"
+            Width="60"
+            Height="30"
+            Margin="180 5 5 10"
+            Content="gomb"
+            Click="create"
+            />
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="1"
+            Text="létrehozás"
+            FontSize="30"/>
+        <TextBox
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="200"
+            Height="70"
+            Background="AntiqueWhite"
+            Text="Name"
+            Name="NameInput"/>
+
+        <TextBox
+            Grid.Row="1"
+            Grid.Column="2"
+            Width="150"
+            Margin="10 10 100 10"
+            Height="70"
+            Background="AntiqueWhite"
+            Name="AgeInput"
+            Text="Age"/>
+        <StackPanel Name="buttons" Background="AliceBlue" HorizontalAlignment="Left" Height="170" Margin="244,20,0,0" VerticalAlignment="Top" Width="20" Grid.Column="2"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Background="DodgerBlue"
+            Width="60"
+            Height="30"
+            Margin="190,135,14,44"
+            Content="torles"
+            Click="deleteall"
+            />
+        <StackPanel x:Name="editstackpanel" Background="red" HorizontalAlignment="Left" Height="170" Margin="214,20,0,0" VerticalAlignment="Top" Width="30" Grid.Column="2"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Background="DodgerBlue"
+            Width="60"
+            Height="30"
+            Margin="184,26,20,153"
+            Content="mentes"
+            Click="save"
+            Name="savebutton"
+            />
+
+    </Grid>
+</Window>
